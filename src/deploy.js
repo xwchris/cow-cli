@@ -7,7 +7,7 @@ import { isValidProject } from './utils.js';
 
 export async function deploy() {
   if (!isValidProject()) {
-    console.log(chalk.red("当前目录不是一个有效的项目"));
+    console.log(chalk.red("当前目录不是一个有效的项目，请确保当前目录有package.json文件"));
     return;
   }
 

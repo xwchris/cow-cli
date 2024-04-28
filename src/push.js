@@ -2,11 +2,15 @@
 import inquirer from 'inquirer';
 import shell from 'shelljs';
 import chalk from 'chalk';
-import { isValidGitProject } from './utils.js';
+import { isValidGitProject, isValidProject } from './utils.js';
 
 export async function push() {
+  if (!isValidProject) {
+    console.log(chalk.red("当前目录不是一个有效的项目，请确保当前目录有package.json文件"));
+    return;
+  }
   if (!isValidGitProject()) {
-    console.log(chalk.red("当前目录不是一个有效的git项目"));
+    console.log(chalk.red("当前目录不是一个有效的git项目，请在当前目录执行create-git命令创建一个git项目"));
     return;
   }
 
