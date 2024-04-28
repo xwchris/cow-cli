@@ -1,11 +1,11 @@
 {
-  "name": "dog-cli",
+  "name": "cow-cli",
   "version": "1.0.0",
   "description": "create my own project",
   "main": "src/index.js",
   "type": "module",
   "bin": {
-    "dog": "./src/index.js"
+    "cow": "./src/index.js"
   },
   "dependencies": {
     "@octokit/core": "^6.1.2",

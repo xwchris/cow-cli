@@ -1,15 +1,15 @@
-## dog-cli
-dog-cli 是一个用于创建前端项目的命令行工具。
+## cow-cli
+cow-cli 是一个用于创建前端项目的命令行工具。
 
 ### 安装
-在你的项目目录中运行以下命令来安装 dog-cli：
+在你的项目目录中运行以下命令来安装 cow-cli：
 ```bash
-npm install dog-cli -g
+npm install cow-cli -g
 ```
 
 使用
 初始化
-在你的项目目录中运行以下命令来初始化 dog-cli：
+在你的项目目录中运行以下命令来初始化 cow-cli：
 
 这将会从 shell 环境变量中获取 GitHub token。如果没有设置 GitHub token，它会提示你输入。
 
