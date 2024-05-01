@@ -30,7 +30,7 @@ export async function create(token, name) {
 
   const spinner = ora('正在创建项目...').start();
 
-  await degit('suren-atoyan/react-pwa#master').clone(projectName);
+  await degit('xwchris/reactjs-vite-tailwindcss-boilerplate#main').clone(projectName);
   // shell.exec(`npx degit suren-atoyan/react-pwa#master ${projectName}`);
   shell.cd(projectName);
   // 安装依赖
