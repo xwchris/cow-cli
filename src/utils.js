@@ -2,13 +2,13 @@ import fs from 'fs';
 
 export function isValidProject() {
   // Check if package.json file exists
-  if (!fs.existsSync('package.json')) {
-    return false;
+  if (fs.existsSync('package.json') || fs.existsSync('requirements.txt')) {
+    return true;
   }
   // Additional validation logic if needed
   // ...
 
-  return true;
+  return false;
 }
 
 export function isValidGitProject() {
